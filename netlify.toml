@@ -1,0 +1,10 @@
+# Конфигурация Netlify для сайта ГОНКОНГ
+[build]
+  publish = "."                      # статика (index.html) лежит в корне
+  functions = "netlify/functions"    # папка с серверными функциями
+
+# форма шлёт на /api/book — перенаправляем на функцию, чтобы фронтенд не менять
+[[redirects]]
+  from = "/api/book"
+  to = "/.netlify/functions/book"
+  status = 200
