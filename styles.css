@@ -224,7 +224,7 @@ section[id] { scroll-margin-top: var(--header-h); }
   position: absolute;
   inset: 0;
   background: var(--ink);
-  opacity: .55;
+  opacity: .7;          /* сильнее тонируем фото, чтобы оно не забирало внимание */
   z-index: 1;
 }
 /* лёгкая виньетка снизу, чтобы текст «садился» на фон */
@@ -243,20 +243,6 @@ section[id] { scroll-margin-top: var(--header-h); }
   text-align: center;
   padding: 0 1rem;
   transform: translateY(4%); /* группа логотипа чуть ниже центра, ближе к описанию */
-}
-.hero__watermark {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -54%);
-  font-family: var(--font-cn);
-  font-weight: 900;
-  font-size: clamp(16rem, 46vw, 40rem);
-  line-height: 1;
-  color: var(--red);
-  opacity: .15;
-  z-index: -1;
-  pointer-events: none;
-  white-space: nowrap;
 }
 /* Логотип в hero: цветок (вращается) над словесным знаком */
 .hero__logo {
