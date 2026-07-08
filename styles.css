@@ -438,9 +438,9 @@ section[id] { scroll-margin-top: var(--header-h); }
   z-index: 0;
 }
 .hero-slider__bg.is-active { opacity: 1; transform: scale(1); }
-/* base.jpg крупнее — чтобы не были видны края фото */
-.hero-slider__bg[data-cat="mains"] { transform: scale(1.28); }
-.hero-slider__bg[data-cat="mains"].is-active { transform: scale(1.22); }
+/* main007 / coctail007 дополнительно затемняем, чтобы работали как фон */
+.hero-slider__bg[data-cat="mains"],
+.hero-slider__bg[data-cat="cocktails"] { filter: brightness(.6); }
 .hero-slider__overlay {
   position: absolute;
   inset: 0;
